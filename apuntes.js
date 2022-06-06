@@ -7,3 +7,6 @@
 //Run the application
 cd my-app
 ng serve --open
+
+//Generate component 
+ng generate component hola-mundo
