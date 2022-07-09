@@ -10,3 +10,4 @@ ng serve --open
 
 //Generate component 
 ng generate component hola-mundo
+// haciendo cambios
