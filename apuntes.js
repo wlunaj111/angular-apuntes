@@ -10,4 +10,7 @@ ng serve --open
 
 //Generate component 
 ng generate component hola-mundo
-// haciendo cambios
+
+//Install json-server 
+npm i -g json-server
+
