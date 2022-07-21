@@ -16,3 +16,4 @@ npm i -g json-server
 
 //Install angular material
 npm i @angular/material
+ng add @angular/material
