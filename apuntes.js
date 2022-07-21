@@ -14,3 +14,5 @@ ng generate component hola-mundo
 //Install json-server 
 npm i -g json-server
 
+//Install angular material
+npm i @angular/material
