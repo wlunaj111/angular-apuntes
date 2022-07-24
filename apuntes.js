@@ -15,5 +15,8 @@ ng generate component hola-mundo
 npm i -g json-server
 
 //Install angular material
-npm i @angular/material
 ng add @angular/material
+
+// Instalar modulo -m=app para que me incluya el modulo en app.module.ts,   --route products me crea una ruta "/productss"
+ng g m pages/products -m=app --route products
+
