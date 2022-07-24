@@ -19,4 +19,5 @@ ng add @angular/material
 
 // Generar modulo -m=app para que me incluya el modulo en app.module.ts,   --route products me crea una ruta "/productss"
 ng g m pages/products -m=app --route products
-
+// Crear un componente sin archivo de testing --skip-tests
+ng g c pages/products/product --skip-tests
