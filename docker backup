@@ -1,5 +1,6 @@
 //Crear backup desde docker:
-
+//Entrar al bash 
 docker exec -it 8e44a172d495 bash
-pg_dump -U postgres -W -h 127.0.0.1 piatex > /home/albert/copiaaa.backup
+pg_dump -U postgres -W -h 127.0.0.1 piatex > copiaaa.backup 
+//salir del bash de postgres y luego poner esto
 docker cp 8e44a172d495:/copiaaa.backup .
