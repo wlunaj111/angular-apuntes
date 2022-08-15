@@ -1,0 +1,2 @@
+//Hacer backup en docker 
+cat /home/albert/Descargas/piatex.backup | docker exec -i postgresql psql -U postgres piatex
