@@ -10,6 +10,7 @@ ng serve --open
 
 //Generate component 
 ng generate component hola-mundo
+ng g c modules/paquete/componentes/paquete-pay-dialog // a partir de la carpeta modules
 
 //Install json-server 
 npm i -g json-server
