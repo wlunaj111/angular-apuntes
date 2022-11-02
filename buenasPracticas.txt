@@ -1,0 +1,21 @@
+  //Cuando quiero sumar un día a la fecha pasada por parámetro
+  saveForm(): void {
+    try {
+      console.log('this.form.value',this.form.value)
+    if (this.form.valid) {
+      const value = this.form.value;
+      if (value.start_date) {
+        value.start_date = format(value.start_date, 'yyyy-MM-dd\'T\'HH:mm');
+
+      }
+      if (value.end_date) {
+       // value.end_date = format(value.end_date, 'yyyy-MM-dd\'T\'HH:mm');
+        value.end_date = format(addDays(value.end_date, 1), 'yyyy-MM-dd\'T\'HH:mm');//Agregando un día a la fecha fin para que el intervalo mínimo sea de 24 hrs
+      }
+      this.save.emit(value);
+    }    
+    } catch (error) {
+      console.log(error)
+    }
+    
+  }
