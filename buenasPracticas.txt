@@ -19,3 +19,12 @@
     }
     
   }
+  ---------------------------------------------------------------------------------------------------------------------------
+  //Cuando quiero desabilitar enter en el login teniendo un boton de mostrar y ocultar password
+    <input [required]="!loginForm.get('password').pristine" [type]="showPass? 'text' : 'password'"
+           formControlName="password" matInput
+           style="color: #ffffff;" (keydown.enter)="$event.preventDefault();login()">
+    <button (click)="toggleVisibility($event)" [matTooltip]="showPass ? 'Ocultar contraseña' : 'Mostrar contraseña'"
+            mat-icon-button matSuffix>
+      <mat-icon>{{showPass ? 'visibility_off' : 'visibility'}}</mat-icon>
+    </button>
