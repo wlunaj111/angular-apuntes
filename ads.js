@@ -1,9 +1,12 @@
+"use strict";
+
 //const API_CLICK99 = 'http://localhost:8002/v1/click/'
 //const API_IMPRESSION = 'http://localhost:8002/v1/impression/'
 
 
-
-fetch('http://10.37.41.177:8002/es/resource/?medio=28&zone_name=1&zone_size=300x200&quantity=1', {
+//http://172.28.106.26:8080/piatex/es/resource/?medio=28&zone_name=1&zone_size=300x200&quantity=1
+// 'http://10.37.41.177:8002/es/resource/?medio=28&zone_name=1&zone_size=300x200&quantity=1'
+fetch('https://piatex.mprc.cu/piatex/es/resource/?medio=28&zone_name=1&zone_size=300x200&quantity=1', {
   method: "GET",
   headers: {"Content-type": "application/json;charset=UTF-8"}
 })
@@ -50,7 +53,7 @@ fetch('http://10.37.41.177:8002/es/resource/?medio=28&zone_name=1&zone_size=300x
   image.setAttribute('width', '450'); // 👈️ width in px
   
   // 👇️ optionally style the image
-  image.style.border = '5px solid yellow';
+  image.style.border = '5px solid #263241';
   image.style.backgroundColor = "gray";
   
   
