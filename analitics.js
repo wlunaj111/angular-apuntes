@@ -26,8 +26,11 @@ Lo ideal es que las solicitudes y respuestas estén protegidas (puedes usar SSL,
 Tu algoritmo de generación de id debe de ser capaz de generar un gran abanico de ids que hagan dificil la labor de simular otros ids
 (Te recomiendo ids que tengan 256 o más bits).
 
+En smart tv puedes obtener el id del dispositivo desde javascript, la forma varía según que librerías utilices (webOS, Tizen, Toast, etc):
 
-
+El 90% de los navegadores para dispositivos móviles tiene soporte para el objeto javascript “navigator”, que permite detectar el tipo de dispositivo,
+sea Android, iPad, iPhone, iPod incluso windows phone. Este objeto cuenta con tres (3) métodos en los cuales podemos extraer la información del
+dispositivo: userAgent, vendor y opera. Este último para detectar los navegadores Opera.
 
 
 
