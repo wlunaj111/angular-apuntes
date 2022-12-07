@@ -28,3 +28,38 @@
             mat-icon-button matSuffix>
       <mat-icon>{{showPass ? 'visibility_off' : 'visibility'}}</mat-icon>
     </button>
+    
+    ----------------------------------------------------------------------------------------------------------------------------
+    <div>
+  <ins 
+  class = "adsbypiatex"
+  style="display:block"
+  data-zone = "1"
+  data-medio = "28"
+ ></ins>  
+ <h1>-------------------</h1>
+ <ins 
+  class = "adsbypiatex"
+  style="display:block"
+  data-zone = "1"
+  data-medio = "28"
+ ></ins> 
+</div>
+
+-----------------------------------------------------------------------------------------------------------------------------------
+  ngOnInit() {
+    PiatexAds.init(
+     {
+      className: 'adsbypiatex'
+     }      
+    )
+  }
+
+  navigatePost(slug_url: string) {
+    PiatexAds.init(
+      {
+       className: 'adsbypiatex'
+      }      
+     )
+    this.navigate.emit(slug_url);
+  }
