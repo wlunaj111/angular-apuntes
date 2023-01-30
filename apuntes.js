@@ -26,3 +26,6 @@ ng g c pages/products/product --skip-tests
 
 // Crear un service sin fichero de testing 
 ng g service pages/services/products --skip-tests
+
+//Para generar el environment en Angular 15
+ ng generate environments
