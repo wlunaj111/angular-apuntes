@@ -29,3 +29,5 @@ ng g service pages/services/products --skip-tests
 
 //Para generar el environment en Angular 15
  ng generate environments
+//Para generar los guards
+ ng g g auth //este es un ejemplo
