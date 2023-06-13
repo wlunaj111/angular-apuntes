@@ -31,3 +31,14 @@ ng g service pages/services/products --skip-tests
  ng generate environments
 //Para generar los guards
  ng g g auth //este es un ejemplo
+
+
+
+si al ejecutar npm start da este error:   An unhandled exception occurred: listen EACCES: permission denied 0.0.0.0:4202
+ 
+puedes solucionarlo ejecutando desde consola como administrador 
+
+net stop winnat
+netsh int ipv4 set dynamic tcp start=49152 num=16384
+netsh int ipv6 set dynamic tcp start=49152 num=16384
+net start winnat
