@@ -32,6 +32,10 @@ ng g service pages/services/products --skip-tests
 //Para generar los guards
  ng g g auth //este es un ejemplo
 
+para agregar  bootstrap al proyecto
+npm install bootstrap
+en el css agregar 
+@import "~bootstrap/dist/css/bootstrap.min.css";
 
 
 si al ejecutar npm start da este error:   An unhandled exception occurred: listen EACCES: permission denied 0.0.0.0:4202
