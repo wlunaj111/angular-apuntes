@@ -1,0 +1,8 @@
+
+<div *ngIf="removedHero else nothingWasDeleted">
+  <h3>Héroe borrado <small class="text-danger">{{ removedHero }}</small></h3>
+</div>
+
+<ng-template #nothingWasDeleted>
+  <h3>No ha borrado nada</h3>
+</ng-template>
