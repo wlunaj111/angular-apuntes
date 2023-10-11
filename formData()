@@ -3,3 +3,10 @@
 body.forEach((value, key) => {
       console.log(key + ': ' + value);
     });
+//Para ver cual es el error en el campo del formulario 
+ for (const controlName in this.form.controls) {
+      const control = this.form.controls[controlName];
+      if (control.invalid) {
+        console.log(`Campo ${controlName} tiene errores:`, control.errors);
+      }
+    }
